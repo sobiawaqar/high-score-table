@@ -1,38 +1,35 @@
 .App {
-  text-align: center;
+  text-align: center; 
+  font-size: large;
+  max-width: 500px;
+  margin-left: 25rem;
+}
+.score-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  border: 14px solid #49d819;
+  margin: 3rem;
+  justify-content: space-around;
+}
+p {
+  border-bottom: 1px solid #363945;
+  padding: 2px;
+  justify-content: space-between;
+}
+.card-container {
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, rgb(41, 73, 177), rgb(0, 161, 112));
+  border-image-slice: 1;
+}
+h1 {
+  color: #0da0a5;
+  font-family: Nunito, Sans;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  border-bottom: 1px solid #363945;
+  color: #0da0a5
 }
